@@ -1,27 +1,34 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZES</title><meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/static/webdata/all.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <div id = "heading">   
-        <p id = "head_text">Welcome to ZES (Zoha Entertainment System)</p>
-    </div>
-    <br><br><br>
-    <div id = "status">
-        <p id = "status_head">Status</p>
-        <p id = "plain">Running on : 192.168.1.102</p>
-        <p id = "plain">Watching : "welcome to ZES"</p>
-        <button id = "play"></button>
-        <button id = "mute"></button>
-        <input id = "seek" type = "range" min = "0" max = "100" value="50" step="1">
-        <input id = "volume" type = "range" min = "0" max = "100" value="50" step="1">
-        <button id = "full"></button>
-    </div>
-
-</body>
-<script src= "/static/webdata/js/vid.js"></script>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ZES</title><meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/static/webdata/all.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id = "heading">   
+            <p id = "head_text">Welcome to Zoha Entertainment System</p>
+        </div>
+        <br>
+        <br>
+        <div id = "status" onclick="window.location.href='/TV';">
+            <br>
+            <br>
+            <p id = "status_head">Watch Video</p>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div id = "status" onclick="window.location.href='/Big Boss';">
+            <br>
+            <br>
+            <p id = "status_head2">Houston</p>
+            <br>
+            <br>
+        </div>
+    </body>
+    <script src= "/static/webdata/js/style.js"></script>
 </html>
